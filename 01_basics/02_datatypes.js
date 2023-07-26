@@ -37,3 +37,11 @@ myNum = 123n
 let myNum2 = 123
 console.log(typeof myNum)    // bigint
 console.log(typeof myNum2)   // number
+
+
+// symbol
+// symbol is used to maintain the uniqueness
+let id = Symbol('123')
+let id2 = Symbol('123')
+console.log(id===id2)       // false
+console.log(typeof id)      // symbol
