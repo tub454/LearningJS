@@ -24,3 +24,55 @@ console.log(c)      // 30
 
 
 
+
+
+// global scope vs block scope vs function scope
+
+//block1
+{
+    let firstName = "Arnab"
+    let num = 10;
+    console.log(num)
+}
+
+//console.log(firstName)   // ReferenceError: firstName is not defined
+
+//block2
+{
+    let firstName = "Spandan"
+    let num = 100;
+    console.log(firstName) 
+    console.log(num)
+}
+
+// same for const keyword
+
+// but var has function scope
+{
+    var msg = 'Hii'
+    console.log(msg)       // Hii
+}
+console.log(msg)           // Hii
+{
+    console.log(msg)       // Hii 
+    var msg = 'humm'
+    console.log(msg)       // humm
+}
+
+
+
+
+// function inside function (we will see it later)
+function one(){
+    const userName = 'Arnab'
+    function two(){
+        const website = 'github'
+        console.log(userName)
+    }
+    // console.log(website)     // ReferenceError: website is not defined
+    two()
+}
+
+one()
+
+// two()                        // ReferenceError: two is not defined 
