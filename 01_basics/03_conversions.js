@@ -67,9 +67,9 @@ let myStr = "34"
 // myStr = +myStr
 console.log(typeof +myStr)       // number
 // app2:
-Str = "123456789"
-Str = Number(Str)                // constructor concept, written in block letter
-console.log(typeof Str)          // number
+str = "123456789"
+str = Number(str)                // constructor concept, written in block letter
+console.log(typeof str)          // number
 
 let num = 5;
 num*=2;
